@@ -1,0 +1,35 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .error-content {
+    text-align: center;
+  }
+  
+  .error-heading {
+    font-size: 48px;
+    color: #ff6347; /* warna merah */
+  }
+  
+  .error-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .error-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4169e1; /* warna biru */
+    color: #fff; /* warna putih */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .error-button:hover {
+    background-color: #001f3f; /* warna biru tua */
+  }
