@@ -168,7 +168,9 @@ const Keterampilandev = () => {
               showConfirmButton: false,
               timer: 1500,
             });
-            getDataDashboard(); // Refresh data after deletion
+            setTimeout(() => {
+              window.location.reload();
+            }, 1000); // Refresh data after deletion
           }
         } catch (error) {
           console.error("Gagal menghapus data skill", error);

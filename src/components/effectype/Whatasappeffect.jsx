@@ -30,7 +30,7 @@ const Whatasappeffect = () => {
   }, []);
 
   return (
-    <a href="www.google.com" target="_blank">
+    <a href="//www.google.com" target="_blank">
       {isOpen && (
         <div className="chat chat-end fixed bottom-4 right-4 text-white rounded-full p-2 animate-open">
           <div className="chat-image avatar">

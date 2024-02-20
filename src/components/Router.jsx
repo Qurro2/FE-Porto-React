@@ -9,6 +9,7 @@ import Pengalamandev from "./admin/Pengalamandev";
 import Keterampilandev from "./admin/Keterampilandev";
 import Projectdev from "./admin/Projectdev";
 import Errorpage from "./notfound/errorpage";
+import Profileuser from "./form/Profileuser";
 
 const Router = () => {
   const token = Cookies.get("token"); // Membaca token dari cookies
@@ -23,6 +24,7 @@ const Router = () => {
           <Route path="/keterampilanupdate" element={<Keterampilandev />} />
           <Route path="/projectupdate" element={<Projectdev />} />
           <Route path="*" element={<Navigate to="/developer" />} />
+          <Route path="/profile/user" element={<Profileuser />} />
         </>
       ) : (
         <>

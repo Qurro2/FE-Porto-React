@@ -8,7 +8,7 @@ import axios from "axios";
 
 const Sidebar = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto sticky top-0 left-0 right-0 z-10">
       <div className="navbar bg-base-200 rounded-3xl mt-5">
         <div className="navbar-start">
           <div className="dropdown">
@@ -93,6 +93,9 @@ const Sidebar = () => {
                 tabIndex={0}
                 className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
               >
+                <li>
+                  <a href="/profile/user">Profile</a>
+                </li>
                 <li>
                   <a
                     onClick={() => {

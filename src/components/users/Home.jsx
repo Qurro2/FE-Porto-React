@@ -32,7 +32,7 @@ const Homepage = () => {
   const getHome = async () => {
     try {
       const response = await axios.get("http://localhost:3000/user/profile");
-      console.log(response.data.data);
+
       setHome(response.data.data);
     } catch (error) {
       console.error("Error fetching data:", error);

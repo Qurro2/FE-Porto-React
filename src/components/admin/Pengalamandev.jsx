@@ -126,7 +126,7 @@ const Pengalamandev = () => {
   };
 
   const handleDelete = async (id) => {
-    Swal.fire({
+    const confirmed = await Swal.fire({
       title: "Apakah Anda yakin?",
       text: "Data yang dihapus tidak dapat dikembalikan!",
       icon: "warning",
@@ -135,32 +135,34 @@ const Pengalamandev = () => {
       cancelButtonColor: "#3085d6",
       cancelButtonText: "Batal",
       confirmButtonText: "Ya, hapus!",
-    }).then(async (result) => {
-      if (result.isConfirmed) {
-        try {
-          const responseDelete = await axios.delete(
-            `http://localhost:3000/dev/pengalaman/${id}`,
-            {
-              headers: {
-                Authorization: `${token}`,
-              },
-            }
-          );
-          if (responseDelete.status === 200) {
-            Swal.fire({
-              position: "center",
-              icon: "success",
-              title: "Berhasil menghapus data",
-              showConfirmButton: false,
-              timer: 5000,
-            });
-            getDataDashboard(); // Refresh data after deletion
-          }
-        } catch (error) {
-          console.error("Gagal menghapus data skill", error);
-        }
-      }
     });
+
+    if (confirmed.isConfirmed) {
+      try {
+        const responseDelete = await axios.delete(
+          `http://localhost:3000/dev/pengalaman/${id}`,
+          {
+            headers: {
+              Authorization: `${token}`,
+            },
+          }
+        );
+        if (responseDelete.status === 200) {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Berhasil menghapus data",
+            showConfirmButton: false,
+            timer: 5000,
+          });
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
+        }
+      } catch (error) {
+        console.error("Gagal menghapus data skill", error);
+      }
+    }
   };
 
   const getDataDashboard = async () => {
