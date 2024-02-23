@@ -37,7 +37,7 @@ const Whatasappeffect = () => {
             <div className="w-10 rounded-full">
               <img
                 alt="Tailwind CSS chat bubble component"
-                src="../public/images/wa.png"
+                src="../images/wa.png"
                 width={8}
                 height={8}
               />
