@@ -8,7 +8,7 @@ import Profiledev from "./admin/Profiledev";
 import Pengalamandev from "./admin/Pengalamandev";
 import Keterampilandev from "./admin/Keterampilandev";
 import Projectdev from "./admin/Projectdev";
-import Errorpage from "./notfound/errorpage";
+import Errorpage from "./notfound/Errorpage";
 import Profileuser from "./form/Profileuser";
 import Contactdev from "./admin/Contactdev";
 
