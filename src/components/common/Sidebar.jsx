@@ -66,6 +66,12 @@ const Sidebar = () => {
                   Project Update
                 </Link>
               </li>
+              <li>
+                <Link to="/contact">
+                  <AiFillContainer />
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

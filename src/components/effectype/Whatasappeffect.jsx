@@ -30,14 +30,16 @@ const Whatasappeffect = () => {
   }, []);
 
   return (
-    <a href="//www.google.com" target="_blank">
+    <a href="//wa.me/6281315024442" target="_blank">
       {isOpen && (
         <div className="chat chat-end fixed bottom-4 right-4 text-white rounded-full p-2 animate-open">
           <div className="chat-image avatar">
             <div className="w-10 rounded-full">
               <img
                 alt="Tailwind CSS chat bubble component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                src="../public/images/wa.png"
+                width={8}
+                height={8}
               />
             </div>
           </div>

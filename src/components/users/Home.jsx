@@ -71,7 +71,7 @@ const Homepage = () => {
               </a>
               <div className="grid grid-flow-col gap-5 auto-cols-max mt-5">
                 <a
-                  href="https://github.com/your-github-username"
+                  href="https://github.com/Qurro2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn hover:bg-neutral-500"
@@ -79,7 +79,7 @@ const Homepage = () => {
                   <FaGithub size={24} />
                 </a>
                 <a
-                  href="https://instagram.com/your-instagram-username"
+                  href="https://www.instagram.com/qurrotaayun.2/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn hover:bg-red-700"
@@ -87,7 +87,7 @@ const Homepage = () => {
                   <RiInstagramFill size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com/in/your-linkedin-username"
+                  href="https://www.linkedin.com/in/qurrota-ayun-a45a48256/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn hover:bg-blue-700"
